@@ -1,0 +1,24 @@
+@import "../../assets/styles/variables.scss";
+
+.listReset {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.warning {
+  height: 50px;
+  padding-top: 13px;
+  text-align: center;
+  border: 1px solid $border-warning;
+  background-color: $background-warning;
+  border-radius: 6px;
+  font-size: 13px;
+}

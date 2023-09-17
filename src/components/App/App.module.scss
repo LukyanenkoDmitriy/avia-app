@@ -1,0 +1,119 @@
+@import "../../assets/styles/variables.scss";
+
+html {
+    box-sizing: border-box;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+  
+  @font-face {
+    font-family: "Open Sans";
+    src: local("Open Sans SemiBold"), local("OpenSans-SemiBold"),
+      url("../../assets/fonsts/OpenSans-SemiBold.ttf") format("truetype");
+    font-weight: 600;
+  }
+  
+  @font-face {
+    font-family: "Open Sans";
+    src: local("Open Sans Regular"), local("OpenSans-Regular"),
+      url("../../assets/fonsts/OpenSans_Condensed-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  body {
+    min-width: 320px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    color: $color-default;
+    background-color: $color-background;
+  }
+  
+  img {
+    max-width: 100%;
+  }
+  
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .conteiner {
+    display: flex;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 103px;
+    padding-bottom: 20px;
+  }
+
+  .main-wrapper {
+    max-width: 502px;
+  }
+
+  .main {
+    padding-top: 37px;
+    flex-basis: 100%;
+  }
+
+  .article {
+    position: relative;
+    top: 180px;
+    min-width: 232px;
+    max-height: 252px;
+    margin-right: 20px;
+    padding: 20px 20px 0 20px;
+    border-radius: 6px;
+    background-color: $color-white;
+    box-shadow: $filters-shadow;
+  }
+
+  @media (max-width: 960px) {
+    body {
+      position: relative;
+    }
+
+    .conteiner {
+     flex-direction: column;
+     max-width: 768px;
+     padding: 0 4px;
+     padding-top: 80px;
+    }
+
+    .article {
+      min-width: 0;
+      max-width: 502px;
+      position: static;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .main-wrapper {
+      margin: 0 auto;
+    }
+
+    .main {
+      padding-top: 10px;
+    }
+  }
+  

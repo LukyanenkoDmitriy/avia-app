@@ -1,0 +1,54 @@
+@import "../../assets/styles/variables.scss";
+
+.tabs {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.buttonReset {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+.tab {
+    width: 50%;
+    height: 50px;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    border: 1px solid $btn-border;
+    background-color: $color-white;
+    text-transform: uppercase;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+
+.tab:last-of-type {
+    border-radius: 0;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.tab.active {
+    border: none;
+    background-color: $color-primary;
+    color: $color-white;
+}
+
+.logo {
+    margin-bottom: 50px;
+    padding-left: 80px;
+}
+
+@media (max-width: 960px) {
+    .tabs {
+        position: relative;
+    }
+
+    .logo {
+        position: absolute;
+        top: -6px;
+    }
+}
